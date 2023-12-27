@@ -9,23 +9,41 @@
 /* Begin PBXBuildFile section */
 		1237869A2B3B0C2A00119AEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123786992B3B0C2A00119AEC /* AppDelegate.swift */; };
 		1237869C2B3B0C2A00119AEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1237869B2B3B0C2A00119AEC /* SceneDelegate.swift */; };
-		1237869E2B3B0C2A00119AEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1237869D2B3B0C2A00119AEC /* ViewController.swift */; };
-		123786A12B3B0C2A00119AEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1237869F2B3B0C2A00119AEC /* Main.storyboard */; };
+		1237869E2B3B0C2A00119AEC /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1237869D2B3B0C2A00119AEC /* MainPageController.swift */; };
 		123786A42B3B0C2A00119AEC /* CarsTestTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 123786A22B3B0C2A00119AEC /* CarsTestTask.xcdatamodeld */; };
 		123786A62B3B0C2F00119AEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 123786A52B3B0C2F00119AEC /* Assets.xcassets */; };
 		123786A92B3B0C2F00119AEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123786A72B3B0C2F00119AEC /* LaunchScreen.storyboard */; };
+		123786B42B3B0ED100119AEC /* AppearenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123786B32B3B0ED100119AEC /* AppearenceManager.swift */; };
+		123786B62B3B0F3800119AEC /* NetworkMonitorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123786B52B3B0F3800119AEC /* NetworkMonitorManager.swift */; };
+		123786B92B3B104300119AEC /* UIViewController + alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123786B82B3B104300119AEC /* UIViewController + alert.swift */; };
+		123786BD2B3B10A200119AEC /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123786BC2B3B10A200119AEC /* Car.swift */; };
+		123786C02B3B124000119AEC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 123786BF2B3B124000119AEC /* SnapKit */; };
+		123786C22B3B124000119AEC /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 123786C12B3B124000119AEC /* SnapKit-Dynamic */; };
+		123786C52B3B126F00119AEC /* CarDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123786C42B3B126F00119AEC /* CarDetailsController.swift */; };
+		123786C72B3B12B300119AEC /* CarCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123786C62B3B12B300119AEC /* CarCVCell.swift */; };
+		123786CA2B3B26F800119AEC /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123786C82B3B26F800119AEC /* Car+CoreDataClass.swift */; };
+		123786CB2B3B26F800119AEC /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123786C92B3B26F800119AEC /* Car+CoreDataProperties.swift */; };
+		123786CD2B3B29CB00119AEC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123786CC2B3B29CB00119AEC /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		123786962B3B0C2A00119AEC /* CarsTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarsTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		123786992B3B0C2A00119AEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1237869B2B3B0C2A00119AEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1237869D2B3B0C2A00119AEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		123786A02B3B0C2A00119AEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1237869D2B3B0C2A00119AEC /* MainPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
 		123786A32B3B0C2A00119AEC /* CarsTestTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CarsTestTask.xcdatamodel; sourceTree = "<group>"; };
 		123786A52B3B0C2F00119AEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		123786A82B3B0C2F00119AEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		123786AA2B3B0C2F00119AEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		123786B32B3B0ED100119AEC /* AppearenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearenceManager.swift; sourceTree = "<group>"; };
+		123786B52B3B0F3800119AEC /* NetworkMonitorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitorManager.swift; sourceTree = "<group>"; };
+		123786B82B3B104300119AEC /* UIViewController + alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + alert.swift"; sourceTree = "<group>"; };
+		123786BC2B3B10A200119AEC /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		123786C42B3B126F00119AEC /* CarDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsController.swift; sourceTree = "<group>"; };
+		123786C62B3B12B300119AEC /* CarCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCVCell.swift; sourceTree = "<group>"; };
+		123786C82B3B26F800119AEC /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		123786C92B3B26F800119AEC /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		123786CC2B3B29CB00119AEC /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				123786C02B3B124000119AEC /* SnapKit in Frameworks */,
+				123786C22B3B124000119AEC /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +78,80 @@
 		123786982B3B0C2A00119AEC /* CarsTestTask */ = {
 			isa = PBXGroup;
 			children = (
-				123786992B3B0C2A00119AEC /* AppDelegate.swift */,
-				1237869B2B3B0C2A00119AEC /* SceneDelegate.swift */,
-				1237869D2B3B0C2A00119AEC /* ViewController.swift */,
-				1237869F2B3B0C2A00119AEC /* Main.storyboard */,
-				123786A52B3B0C2F00119AEC /* Assets.xcassets */,
-				123786A72B3B0C2F00119AEC /* LaunchScreen.storyboard */,
+				123786C82B3B26F800119AEC /* Car+CoreDataClass.swift */,
+				123786C92B3B26F800119AEC /* Car+CoreDataProperties.swift */,
+				123786B12B3B0E8600119AEC /* AppDelegates */,
+				123786B22B3B0EAB00119AEC /* Manager */,
+				123786BB2B3B108100119AEC /* Model */,
+				123786BA2B3B107400119AEC /* View */,
+				123786B72B3B101300119AEC /* Extension */,
+				123786B02B3B0E6200119AEC /* Resources */,
 				123786AA2B3B0C2F00119AEC /* Info.plist */,
 				123786A22B3B0C2A00119AEC /* CarsTestTask.xcdatamodeld */,
 			);
 			path = CarsTestTask;
+			sourceTree = "<group>";
+		};
+		123786B02B3B0E6200119AEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				123786A52B3B0C2F00119AEC /* Assets.xcassets */,
+				123786A72B3B0C2F00119AEC /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		123786B12B3B0E8600119AEC /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				123786992B3B0C2A00119AEC /* AppDelegate.swift */,
+				1237869B2B3B0C2A00119AEC /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		123786B22B3B0EAB00119AEC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				123786B32B3B0ED100119AEC /* AppearenceManager.swift */,
+				123786B52B3B0F3800119AEC /* NetworkMonitorManager.swift */,
+				123786CC2B3B29CB00119AEC /* CoreDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		123786B72B3B101300119AEC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				123786B82B3B104300119AEC /* UIViewController + alert.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		123786BA2B3B107400119AEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				123786C32B3B124C00119AEC /* Cell */,
+				1237869D2B3B0C2A00119AEC /* MainPageController.swift */,
+				123786C42B3B126F00119AEC /* CarDetailsController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		123786BB2B3B108100119AEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				123786BC2B3B10A200119AEC /* Car.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		123786C32B3B124C00119AEC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				123786C62B3B12B300119AEC /* CarCVCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +170,10 @@
 			dependencies = (
 			);
 			name = CarsTestTask;
+			packageProductDependencies = (
+				123786BF2B3B124000119AEC /* SnapKit */,
+				123786C12B3B124000119AEC /* SnapKit-Dynamic */,
+			);
 			productName = CarsTestTask;
 			productReference = 123786962B3B0C2A00119AEC /* CarsTestTask.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +202,9 @@
 				Base,
 			);
 			mainGroup = 1237868D2B3B0C2A00119AEC;
+			packageReferences = (
+				123786BE2B3B124000119AEC /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 123786972B3B0C2A00119AEC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,7 +221,6 @@
 			files = (
 				123786A92B3B0C2F00119AEC /* LaunchScreen.storyboard in Resources */,
 				123786A62B3B0C2F00119AEC /* Assets.xcassets in Resources */,
-				123786A12B3B0C2A00119AEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +231,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1237869E2B3B0C2A00119AEC /* ViewController.swift in Sources */,
+				123786B92B3B104300119AEC /* UIViewController + alert.swift in Sources */,
+				1237869E2B3B0C2A00119AEC /* MainPageController.swift in Sources */,
+				123786BD2B3B10A200119AEC /* Car.swift in Sources */,
+				123786B62B3B0F3800119AEC /* NetworkMonitorManager.swift in Sources */,
+				123786CB2B3B26F800119AEC /* Car+CoreDataProperties.swift in Sources */,
+				123786C52B3B126F00119AEC /* CarDetailsController.swift in Sources */,
 				123786A42B3B0C2A00119AEC /* CarsTestTask.xcdatamodeld in Sources */,
+				123786CD2B3B29CB00119AEC /* CoreDataManager.swift in Sources */,
+				123786CA2B3B26F800119AEC /* Car+CoreDataClass.swift in Sources */,
 				1237869A2B3B0C2A00119AEC /* AppDelegate.swift in Sources */,
+				123786C72B3B12B300119AEC /* CarCVCell.swift in Sources */,
+				123786B42B3B0ED100119AEC /* AppearenceManager.swift in Sources */,
 				1237869C2B3B0C2A00119AEC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +250,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1237869F2B3B0C2A00119AEC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				123786A02B3B0C2A00119AEC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		123786A72B3B0C2F00119AEC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -301,7 +392,6 @@
 				INFOPLIST_FILE = CarsTestTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -329,7 +419,6 @@
 				INFOPLIST_FILE = CarsTestTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -367,6 +456,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		123786BE2B3B124000119AEC /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		123786BF2B3B124000119AEC /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 123786BE2B3B124000119AEC /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		123786C12B3B124000119AEC /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 123786BE2B3B124000119AEC /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		123786A22B3B0C2A00119AEC /* CarsTestTask.xcdatamodeld */ = {
