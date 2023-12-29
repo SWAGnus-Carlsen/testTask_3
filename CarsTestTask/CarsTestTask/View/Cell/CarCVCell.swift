@@ -76,11 +76,10 @@ final class CarCVCell: UICollectionViewCell {
     
     //MARK: Custom methods declaration
     public func configure(
-        withImg image: UIImage,
-        withName name: String
+        withCar car: Car
     ) {
-        imageView.image = image
-        nameLabel.text = name
+        imageView.image = car.picture
+        nameLabel.text = car.model
     }
     
     private func setupCell() {

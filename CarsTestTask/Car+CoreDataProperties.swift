@@ -2,11 +2,11 @@
 //  Car+CoreDataProperties.swift
 //  CarsTestTask
 //
-//  Created by Vitaliy Halai on 26.12.23.
+//  Created by Vitaliy Halai on 28.12.23.
 //
 //
 
-import Foundation
+import UIKit
 import CoreData
 
 
@@ -17,6 +17,10 @@ extension Car {
     }
 
     @NSManaged public var model: String?
+    @NSManaged public var producer: String?
+    @NSManaged public var year: Int16
+    @NSManaged public var picture: UIImage?
+    @NSManaged public var color: UIColor?
 
 }
 

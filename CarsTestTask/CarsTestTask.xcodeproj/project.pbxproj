@@ -21,9 +21,9 @@
 		123786C22B3B124000119AEC /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 123786C12B3B124000119AEC /* SnapKit-Dynamic */; };
 		123786C52B3B126F00119AEC /* CarDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123786C42B3B126F00119AEC /* CarDetailsController.swift */; };
 		123786C72B3B12B300119AEC /* CarCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123786C62B3B12B300119AEC /* CarCVCell.swift */; };
-		123786CA2B3B26F800119AEC /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123786C82B3B26F800119AEC /* Car+CoreDataClass.swift */; };
-		123786CB2B3B26F800119AEC /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123786C92B3B26F800119AEC /* Car+CoreDataProperties.swift */; };
 		123786CD2B3B29CB00119AEC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123786CC2B3B29CB00119AEC /* CoreDataManager.swift */; };
+		123786D82B3E018200119AEC /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123786D62B3E018200119AEC /* Car+CoreDataClass.swift */; };
+		123786D92B3E018200119AEC /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123786D72B3E018200119AEC /* Car+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +41,9 @@
 		123786BC2B3B10A200119AEC /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		123786C42B3B126F00119AEC /* CarDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsController.swift; sourceTree = "<group>"; };
 		123786C62B3B12B300119AEC /* CarCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCVCell.swift; sourceTree = "<group>"; };
-		123786C82B3B26F800119AEC /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		123786C92B3B26F800119AEC /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		123786CC2B3B29CB00119AEC /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		123786D62B3E018200119AEC /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		123786D72B3E018200119AEC /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +78,8 @@
 		123786982B3B0C2A00119AEC /* CarsTestTask */ = {
 			isa = PBXGroup;
 			children = (
-				123786C82B3B26F800119AEC /* Car+CoreDataClass.swift */,
-				123786C92B3B26F800119AEC /* Car+CoreDataProperties.swift */,
+				123786D62B3E018200119AEC /* Car+CoreDataClass.swift */,
+				123786D72B3E018200119AEC /* Car+CoreDataProperties.swift */,
 				123786B12B3B0E8600119AEC /* AppDelegates */,
 				123786B22B3B0EAB00119AEC /* Manager */,
 				123786BB2B3B108100119AEC /* Model */,
@@ -232,15 +232,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				123786B92B3B104300119AEC /* UIViewController + alert.swift in Sources */,
+				123786D92B3E018200119AEC /* Car+CoreDataProperties.swift in Sources */,
 				1237869E2B3B0C2A00119AEC /* MainPageController.swift in Sources */,
 				123786BD2B3B10A200119AEC /* Car.swift in Sources */,
 				123786B62B3B0F3800119AEC /* NetworkMonitorManager.swift in Sources */,
-				123786CB2B3B26F800119AEC /* Car+CoreDataProperties.swift in Sources */,
 				123786C52B3B126F00119AEC /* CarDetailsController.swift in Sources */,
 				123786A42B3B0C2A00119AEC /* CarsTestTask.xcdatamodeld in Sources */,
 				123786CD2B3B29CB00119AEC /* CoreDataManager.swift in Sources */,
-				123786CA2B3B26F800119AEC /* Car+CoreDataClass.swift in Sources */,
 				1237869A2B3B0C2A00119AEC /* AppDelegate.swift in Sources */,
+				123786D82B3E018200119AEC /* Car+CoreDataClass.swift in Sources */,
 				123786C72B3B12B300119AEC /* CarCVCell.swift in Sources */,
 				123786B42B3B0ED100119AEC /* AppearenceManager.swift in Sources */,
 				1237869C2B3B0C2A00119AEC /* SceneDelegate.swift in Sources */,

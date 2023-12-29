@@ -25,9 +25,8 @@ final class MainPageController: UIViewController {
     private lazy var carsCollectionView = UICollectionView()
     
     //MARK: Properties
-    private var cars: [Car] = [
-        Car(model: "BMW", producer: "USA", year: "2019", picture: UIImage(), color: .black)
-    ]
+    lazy var coreDataManager = CoreDataManager.shared
+    private var cars = [Car]()
     {
         didSet {
             carsCollectionView.reloadData()
@@ -41,15 +40,22 @@ final class MainPageController: UIViewController {
         super.viewDidLoad()
         connectionCheck()
         setupUI()
+        //setDefaultData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.prefersLargeTitles = true
     }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         carsCollectionView.reloadData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        cars = coreDataManager.getSavedData()
     }
     
     //MARK: Override methods
@@ -59,6 +65,7 @@ final class MainPageController: UIViewController {
             let deleteButton = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(deleteTapped))
             navigationItem.leftBarButtonItems = [editButtonItem, deleteButton]
             navigationItem.rightBarButtonItem?.isHidden = true
+            carsCollectionView.allowsMultipleSelection = true
             
         } else {
             navigationItem.leftBarButtonItems = [editButtonItem]
@@ -76,19 +83,50 @@ final class MainPageController: UIViewController {
         } else {
             showInfoAlert(withTitle: "You're not connected :-(", withMessage: "Check your internet connection...")
         }
-        
     }
+    
+    private func setDefaultData() {
+        for _ in 0..<3 {
+            let car = Car(context: coreDataManager.context)
+            car.model = "BMW i8"
+            car.color = .red
+            car.picture = UIImage(named: "BMW")
+            car.year = 2019
+            car.producer = "Germany"
+            
+            cars.append(car)
+        }
+    }
+    
+    
 
     
     //MARK: Targets
     @objc func addTapped() {
+        let car = Car(context: coreDataManager.context)
+        car.model = "Mercedes"
+        car.color = .gray
+        car.picture = UIImage(named: "MerenAMG")
+        car.year = 2018
+        car.producer = "Germany"
         
+        cars.append(car)
+        coreDataManager.saveContext()
     }
     
     @objc func deleteTapped() {
         carsCollectionView.indexPathsForSelectedItems?.forEach({ indexPath in
-            cars.remove(at: indexPath.row)
+            let carToRemove = cars[indexPath.row]
+            do {
+                try coreDataManager.delete(carToRemove)
+                cars.remove(at: indexPath.row)
+            }
+            catch {
+                print("Ooops... An error occured while attempting to delete: \(error.localizedDescription)")
+            }
+            
         })
+        
         isEditing = false
         showInfoAlert(withTitle: "Delete button tapped", withMessage: "Fantastic!")
         
@@ -102,7 +140,7 @@ final class MainPageController: UIViewController {
 private extension MainPageController {
     func setupUI() {
         title = Constants.controllerTitle
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = AppearenceManager.shared.backgroundColor
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
         navigationItem.rightBarButtonItem = addButton
         navigationItem.leftBarButtonItems = [editButtonItem]
@@ -159,10 +197,9 @@ extension MainPageController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         let currentCar = cars[indexPath.row]
-//        cell.configure(
-//            withImg: currentCar.image,
-//            withName: currentCar.name
-//        )
+        cell.configure(
+            withCar: currentCar
+        )
         return cell
     }
     
