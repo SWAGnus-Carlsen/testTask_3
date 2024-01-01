@@ -40,7 +40,6 @@ final class MainPageController: UIViewController {
         super.viewDidLoad()
         connectionCheck()
         setupUI()
-        //setDefaultData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -115,7 +114,10 @@ final class MainPageController: UIViewController {
     }
     
     @objc func deleteTapped() {
-        carsCollectionView.indexPathsForSelectedItems?.forEach({ indexPath in
+        let sortedSelectedCells = carsCollectionView.indexPathsForSelectedItems?.sorted(by: {
+            $0.row > $1.row
+        })
+        sortedSelectedCells?.forEach({ indexPath in
             let carToRemove = cars[indexPath.row]
             do {
                 try coreDataManager.delete(carToRemove)
@@ -124,9 +126,8 @@ final class MainPageController: UIViewController {
             catch {
                 print("Ooops... An error occured while attempting to delete: \(error.localizedDescription)")
             }
-            
         })
-        
+       
         isEditing = false
         showInfoAlert(withTitle: "Delete button tapped", withMessage: "Fantastic!")
         

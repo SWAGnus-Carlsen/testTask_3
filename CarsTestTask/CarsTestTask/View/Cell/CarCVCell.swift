@@ -87,7 +87,7 @@ final class CarCVCell: UICollectionViewCell {
         contentView.addSubview(imageView)
         contentView.backgroundColor = AppearenceManager.shared.backgroundColor
         contentView.layer.borderColor = AppearenceManager.shared.foregroundColor.cgColor
-        contentView.layer.borderWidth = 2
+        contentView.layer.borderWidth = 3
         nameLabel.textColor = AppearenceManager.shared.foregroundColor
         contentView.layer.cornerRadius = contentView.frame.height / 8
         contentView.clipsToBounds = true
