@@ -33,8 +33,6 @@ final class MainPageController: UIViewController {
         }
     }
     
-    private var indexToUpdate: Int?
-    
     //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,36 +82,12 @@ final class MainPageController: UIViewController {
         }
     }
     
-    private func setDefaultData() {
-        for _ in 0..<3 {
-            let car = Car(context: coreDataManager.context)
-            car.model = "BMW i8"
-            car.color = .red
-            car.picture = UIImage(named: "BMW")
-            car.year = 2019
-            car.producer = "Germany"
-            
-            cars.append(car)
-        }
-    }
-    
-    
-
-    
     //MARK: Targets
     @objc func addTapped() {
         
         let car = Car(context: coreDataManager.context)
         let vc = CarDetailsController(forCar: car)
         navigationController?.pushViewController(vc, animated: true)
-//        car.model = "Mercedes"
-//        car.color = .gray
-//        car.picture = UIImage(named: "MerenAMG")
-//        car.year = 2018
-//        car.producer = "Germany"
-        
-//        cars.append(car)
-//        coreDataManager.saveContext()
     }
     
     @objc func deleteTapped() {
@@ -127,7 +101,7 @@ final class MainPageController: UIViewController {
                 cars.remove(at: indexPath.row)
             }
             catch {
-                print("Ooops... An error occured while attempting to delete: \(error.localizedDescription)")
+                print("Ooops... An error occured while attempting to delete cells: \(error.localizedDescription)")
             }
         })
        
@@ -216,9 +190,7 @@ extension MainPageController: UICollectionViewDelegate {
         guard !isEditing else { return }
         collectionView.deselectItem(at: indexPath, animated: false)
         let detailsVC = CarDetailsController(forCar: cars[indexPath.row])
-       // detailsVC.delegate = self
         navigationController?.pushViewController(detailsVC, animated: true)
-        indexToUpdate = indexPath.row
     }
     
     func collectionView(_ collectionView: UICollectionView, canEditItemAt indexPath: IndexPath) -> Bool {

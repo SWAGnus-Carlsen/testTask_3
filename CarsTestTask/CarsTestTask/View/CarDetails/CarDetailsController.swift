@@ -131,9 +131,10 @@ final class CarDetailsController: UIViewController {
     }
     
     private func showAlertForEditing(label: UILabel) {
-        let alert = UIAlertController(title: "Editing", message: "Here u can type whatever you want", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Editing", message: "Here you can type whatever you want", preferredStyle: .alert)
         alert.addTextField()
         if label == yearInfo {
+            // it makes only numeric textField for year textField
             alert.textFields?.first?.delegate = self
         }
         alert.textFields?.first?.text = label.text
@@ -157,7 +158,7 @@ final class CarDetailsController: UIViewController {
         showImagePicker()
     }
     
-    @objc private func labelDidPressed(_ sender: UITapGestureRecognizer) {
+    @objc private func didPressLabel(_ sender: UITapGestureRecognizer) {
         guard let tappedLabel = sender.view as? UILabel else { return }
         showAlertForEditing(label: tappedLabel)
     }
@@ -305,9 +306,9 @@ private extension CarDetailsController {
         carImage.addGestureRecognizer(imageViewTapGesture)
         
         ///somehow it doesn't work with one tap gesture. If i'll assign one gesture for all labels only last will work
-        let labelTapGesture = UITapGestureRecognizer(target: self, action: #selector(labelDidPressed(_:)))
-        let label2TapGesture = UITapGestureRecognizer(target: self, action: #selector(labelDidPressed(_:)))
-        let label3TapGesture = UITapGestureRecognizer(target: self, action: #selector(labelDidPressed(_:)))
+        let labelTapGesture = UITapGestureRecognizer(target: self, action: #selector(didPressLabel(_:)))
+        let label2TapGesture = UITapGestureRecognizer(target: self, action: #selector(didPressLabel(_:)))
+        let label3TapGesture = UITapGestureRecognizer(target: self, action: #selector(didPressLabel(_:)))
 
         modelInfo.addGestureRecognizer(labelTapGesture)
         producerInfo.addGestureRecognizer(label2TapGesture)
@@ -332,6 +333,7 @@ extension CarDetailsController: UITextFieldDelegate {
            return false
        }
 }
+
 //MARK: - ColorPickerDelegate
 extension CarDetailsController: UIColorPickerViewControllerDelegate {
     func colorPickerViewControllerDidSelectColor(_ colorPicker: UIColorPickerViewController) {
