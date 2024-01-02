@@ -122,19 +122,6 @@ final class CarDetailsController: UIViewController {
         passedCar.color = colorView.backgroundColor
     }
     
-    private func editExistingCar() {
-        let fetchRequest = Car.fetchRequest()
-        let predicate = NSPredicate(format: "model CONTAINS %@", passedCar.model ?? "model")
-        fetchRequest.predicate = predicate
-        let cars = try? CoreDataManager.shared.context.fetch(fetchRequest)
-        guard let firstCar = cars?.first else { return }
-        firstCar.model = modelInfo.text
-        firstCar.producer = producerInfo.text
-        firstCar.year = Int16(Int(yearInfo.text ?? "") ?? 0)
-        firstCar.picture = carImage.image
-        firstCar.color = colorView.backgroundColor
-    }
-    
     private func showImagePicker() {
         let vc = UIImagePickerController()
         vc.delegate = self
