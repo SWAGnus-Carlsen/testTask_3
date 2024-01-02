@@ -102,18 +102,15 @@ final class MainPageController: UIViewController {
     
     //MARK: Targets
     @objc func addTapped() {
-        
         let car = Car(context: coreDataManager.context)
-        let vc = CarDetailsController(forCar: car)
-        navigationController?.pushViewController(vc, animated: true)
-//        car.model = "Mercedes"
-//        car.color = .gray
-//        car.picture = UIImage(named: "MerenAMG")
-//        car.year = 2018
-//        car.producer = "Germany"
+        car.model = "Mercedes"
+        car.color = .gray
+        car.picture = UIImage(named: "MerenAMG")
+        car.year = 2018
+        car.producer = "Germany"
         
-//        cars.append(car)
-//        coreDataManager.saveContext()
+        cars.append(car)
+        coreDataManager.saveContext()
     }
     
     @objc func deleteTapped() {

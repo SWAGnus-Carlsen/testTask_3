@@ -398,7 +398,6 @@
 				DEVELOPMENT_TEAM = CCCW4AN62Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CarsTestTask/Info.plist;
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to select photos and to add them into the app.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -426,7 +425,6 @@
 				DEVELOPMENT_TEAM = CCCW4AN62Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CarsTestTask/Info.plist;
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to select photos and to add them into the app.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

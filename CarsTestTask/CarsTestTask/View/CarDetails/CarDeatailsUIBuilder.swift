@@ -19,7 +19,6 @@ enum CarDeatailsUIBuilder {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16)
         label.text = text
-        label.isUserInteractionEnabled = false
         label.numberOfLines = 0
         label.textAlignment = .left
         return label
