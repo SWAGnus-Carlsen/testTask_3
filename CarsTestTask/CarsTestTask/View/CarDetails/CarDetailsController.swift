@@ -49,7 +49,7 @@ final class CarDetailsController: UIViewController {
     private let yearLabel = CarDeatailsUIBuilder.createHeaderLabel(withText: "Year")
     
     private let yearInfo = CarDeatailsUIBuilder.createInfoLabel(
-        withText: "Here has to be whole lotta information about the year of creation"
+        withText: "0"
     )
     
     private let colorLabel = CarDeatailsUIBuilder.createHeaderLabel(withText: "Color")
